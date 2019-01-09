@@ -1,7 +1,8 @@
 // @flow
 import * as React from "react";
 import styled from "styled-components";
-import {colorPalette} from '../utils/style';
+import { colorPalette } from "../utils/style";
+import withAction from "./HOC/withAction";
 
 const api_img = "https://image.tmdb.org/t/p/w200/";
 
@@ -23,7 +24,7 @@ const Title = styled.div`
   color: white;
 `;
 const Date = styled.div`
-  font-size:12px;
+  font-size: 12px;
   color: ${colorPalette.greyBlue};
 `;
 
@@ -42,4 +43,4 @@ const MovieCard = (props: Props) => {
   );
 };
 
-export default MovieCard;
+export default withAction(MovieCard);
