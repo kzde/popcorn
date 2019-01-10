@@ -1,5 +1,6 @@
 // @flow
-import * as React from "react";
+import * as React from 'react';
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import Catalog from "./components/Catalog";
